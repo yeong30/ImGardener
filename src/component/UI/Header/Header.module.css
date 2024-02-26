@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+
+.header {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+}
+.header .header__logo {
+  font-family: "Teko", sans-serif;
+  font-size: var(--font-large);
+  text-decoration: none;
+  color: black;
+}
+/* .header .header__login {
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid black;
+  padding: 5px 7px 7px 5px;
+  border-radius: 10px;
+} */
+.header__btn {
+  background-color: white;
+  border: 3px solid var(--color-main-green);
+  color: var(--color-main-green);
+  box-shadow: none;
+}
+
+.header__btn:focus {
+  outline: none;
+}
+
+.header__btn:hover,
+.header__btn:active {
+  background: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (max-width: 760px) {
+  .header .header__logo {
+    font-size: var(--font-medium);
+  }
+}

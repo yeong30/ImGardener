@@ -1,0 +1,67 @@
+.flower-of-day {
+  display: flex;
+  align-items: center;
+  margin-top: var(--base-blank-medium);
+  padding: var(--base-blank-large) 0;
+  border-top: 5px solid var(--color-main-light-green);
+  gap: var(--base-blank-small);
+}
+.flower {
+  width: 50%;
+  text-align: left;
+}
+.flower__rec {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  padding-bottom: var(--base-blank-small);
+}
+.flower__name {
+  /* text-decoration: underline; */
+  border-bottom: 5px solid var(--color-main-light-green);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+}
+.flower__content {
+  font-size: var(--font-regular);
+}
+.flower__img {
+  max-width: 50%;
+  border-radius: var(--size-border-radius-large);
+}
+
+@media screen and (max-width: 1200px) {
+  .flower-of-day {
+    margin-top: var(--base-blank-small);
+    padding: var(--base-blank-small);
+  }
+  .flower {
+    width: 90%;
+  }
+  .flower .flower__rec,
+  .flower__name,
+  .flower__content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .flower__content {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .flower__img {
+    max-width: 50%;
+    aspect-ratio: 1.7;
+    height: auto;
+    border-radius: var(--size-border-radius-large);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flower-of-day {
+    flex-direction: column;
+    margin-top: var(--base-blank-small);
+    padding: var(--base-blank-small);
+  }
+  .flower__img {
+    max-width: 80%;
+  }
+}

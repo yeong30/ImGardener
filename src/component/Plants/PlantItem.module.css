@@ -1,0 +1,76 @@
+.plant {
+  position: relative;
+  border: solid 1px var(--color-light-grey);
+  border-radius: var(--size-border-radius-medium);
+  text-align: left;
+}
+
+.plant .image {
+  display: block;
+  width: 100%;
+  border-top-left-radius: var(--size-border-radius-medium);
+  border-top-right-radius: var(--size-border-radius-medium);
+  height: 200px;
+}
+.plant .plant__info {
+  padding: 1rem;
+  position: relative;
+}
+.plant .plant__info > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plant__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  margin-bottom: var(--base-blank-xsmall);
+}
+
+.plant__property {
+  background-color: transparent;
+  border-radius: var(--size-border-radius-medium);
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: var(--weight-bold);
+  height: 2.5em;
+  letter-spacing: 0.075em;
+  line-height: 2.5em;
+  padding: 0 1em;
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--color-light-grey);
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.collection__btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 2rem;
+  right: var(--base-blank-xsmall);
+  cursor: pointer;
+  color: var(--color-light-grey);
+  font-size: var(--font-small);
+}
+.active {
+  color: red;
+}
+@media screen and (min-width: 481px) and (max-width: 1680px) {
+}
+@media screen and (max-width: 1200px) {
+  .posts {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .posts {
+    width: 300px;
+  }
+}
