@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "commonjs", 
+      "checkJs": true, // 일반 js 파일에서도 에러체크 여부 
+      "outDir": "./dist",
+      "moduleResolution": "Node",
+      "lib": ["ES2015", "DOM", "DOM.Iterable"],
+      "noImplicitAny": true,
+      "strict": true, //strict 관련, noimplicit 어쩌구 관련 모드 전부 켜기
+      "alwaysStrict": true, //자바스크립트 "use strict" 모드 켜기
+      "strictNullChecks": true, //null, undefined 타입에 이상한 짓 할시 에러내기 
+      "baseUrl": "./src"
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "dist"]
+  }
